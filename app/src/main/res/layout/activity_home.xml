@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greyLight"
+    android:orientation="vertical"
+    tools:context="com.example.workstation.firstandthings.HomeActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/techImage"
+            android:clickable="true"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:src="@mipmap/ic_folder_shared_black_24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/techText"
+            android:text="TECH"
+            android:layout_below="@+id/techImage"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/meImage"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="50dp"
+            android:clickable="true"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/techText"
+            android:src="@mipmap/ic_folder_special_black_24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/meText"
+            android:text="ME"
+            android:layout_below="@+id/meImage"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+</RelativeLayout>
